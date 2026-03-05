@@ -1,0 +1,23 @@
+p{
+    border: 3px solid red;
+    width: 35px;
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: justify;
+    font-family: comic sans MS;
+    color: white;
+
+
+}
+.c1{
+    background: linear-gradient(55deg red pink);
+
+}
+.id1{
+    background: linear-gradient(90deg black blue);
+}
+.c2{
+    background: linear-gradient(180deg orange gray );
+}
