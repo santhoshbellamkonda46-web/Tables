@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms with css</title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+    <body>
+        <form name="regform">
+            <table>
+                <!--row1-->
+                <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter your first name">
+                    </td>
+                    <td>
+                        <span>("***enter valid first name***")</span>
+                    </td>
+                 </tr>
+                 <!--row2-->
+                 <tr>
+                    <td>
+                        <label>Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter your last name">
+                    </td>
+                    <td>
+                        <span>("***enter valid last name***")</span>
+                    </td>
+                 </tr>
+                 <!--row3-->
+                 <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" placeholder="enter password">
+                    </td>
+                    <td>
+                        <span>("***enter valid password**")</span>
+                    </td>
+                 </tr>
+                 <!--row4-->
+                 <tr>
+                    <td>
+                        <label>Confirm Password</label>
+                    </td>
+                    <td>
+                        <input type="confirm password" name="cpwd" placeholder="repeate same password">
+                    </td>
+                    <td>
+                        <span>("**Password and Confirm password must be same***")</span>
+                    </td>
+                 </tr>
+                 <!--row5-->
+                 <tr>
+                    <td>
+                        <label>E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" name="uemail" placeholder="enter your e-mail">
+                    </td>
+                    <td>
+                        <span>("***Enter your E_mail***")</span>
+                    </td>
+                 </tr>
+                 <!--row6-->
+                 <tr>
+                    <td>
+                        <label>Mobile Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="contact" placeholder="enter your mobile number">
+                    </td>
+                    <td>
+                        <span>("***Enter your mobile number***")</span>
+                    </td>
+                 </tr>
+                 <!--row7-->
+                 <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Male" value="M">Male
+                        <input type="radio" name="Female" value="F">Female
+                    </td>
+                    <td>
+                        <span>("***select your gender")</span>
+                    </td>
+                 </tr>
+                 <!--row8-->
+                 <tr>
+                    <td>
+                        <label>Languages</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="language" value="c">C Lang
+                        <input type="checkbox" name="language" value="c++">C++ 
+                    </td>
+                    <td>
+                        <span>("***select your language***")</span>
+                    </td>
+                </tr>
+                <!--row9-->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="languages" value="java">Java
+                        <input type="checkbox" name="language" value="react">Mern
+                        <input type="checkbox" name="languages" value="python">Python
+                    </td>
+                    <td></td>
+                </tr>
+                <!--row10-->
+                <tr>
+                    <td>
+                        <label>DOB</label>
+                    </td>
+                    <td>
+                        <input type="date" name="udob">
+                    </td>
+                    <td>
+                        <span>("***enter your dob***")</span>
+                    </td>
+                </tr>
+                <!--row11-->
+                <tr>
+                    <td>
+                        <label>Pref Time</label>
+                    </td>
+                    <td>
+                        <input type="time" name="ptime">
+                    </td>
+                    <td>
+                        <span>("***enter valid time***")</span>
+                    </td>
+                </tr>
+                <!--row12-->
+                <tr>
+                    <td>
+                        <label>Fav Color</label>
+                    </td>
+                    <td>
+                        <input type="color" name="fcolor">
+                    </td>
+                    <td>
+                        <span>("***enter valid color***")</span>
+                    </td>
+                </tr>
+                <!--row13-->
+                <tr>
+                    <td>
+                        <label>Country</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="">country</option>
+                            <option value="ind">india</option>
+                            <option value="uk">london</option>
+                            <option value="sl">srilanka</option>
+                            <option value="usa">united states of america</option>
+                            <option value="chi">china</option>
+                            <option value="rsa">russian</option>
+                            <option value="nl">netherland</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span>("***select country***)</span>
+                    </td>
+                </tr>
+                <!--row14-->
+                <tr>
+                    <td>
+                        <label>Adress</label>
+                    </td>
+                    <td>
+                        <textarea name="addr"></textarea>
+                    </td>
+                    <td>
+                        <span>("***max 50 characters are alowed***")</span>
+                    </td>
+                </tr>
+                <!--row15-->
+                <tr>
+                    <td>
+                        <label>Upload Resume</label>
+                    </td>
+                    <td>
+                        <input type="file" name="user resume" accept="pdf">
+                    </td>
+                    <td>
+                        <span>("***upload pdf files only***")</span>
+                    </td>
+                </tr>
+                <!--row16-->
+                <tr>
+                    <td>
+                        <input type="submit" value="register">
+                        <input type="reset" value="clear">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </form>
+        
+        
+    </body>
+</html>

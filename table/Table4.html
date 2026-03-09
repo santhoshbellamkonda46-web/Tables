@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Table5</title>
+        <title>Tables with CSS</title>
+        <style>
+            table{
+                width: 50%;
+                text-align: center;
+                margin: 100px auto;
+                border: 1px solid gray;
+            }
+            th,td{
+                border: 1px solid gray;
+            }
+            th{
+                height: 50px;
+            }
+            td{
+                height: 50px;
+            }
+        </style>
     </head>
     <body>
-        <table border="2"
-               align="center">
-            <!--ROW1-->
+        <table>
             <tr>
-                <th rowspan="3">Day</th>
-                <th colspan="5">Seminar</th>
+                <th rowspan="3"><br>Day</th>
+                <th colspan="3">seminar</th>
             </tr>
-            <!--ROW2-->
             <tr>
-                <td colspan="2">Schedule</td>
+                <th colspan="2">schedule</th>
+                <th rowspan="2">Topic</th>
             </tr>
-            <!--ROW3-->
-            <tr>
-                <td>Begin</td>
-                <td>End</td>
-                <td colspan="3">Topic</td>
+             <tr>
+                <th>begin</th>
+                <th>End</th>
             </tr>
-            <!--ROW4-->
-            <tr>
+             <tr>
                 <td rowspan="2">Monday</td>
-                <td rowpan="4">8:00 am</td>
-                <td rowspan="2">5:00 am</td>
-                <td>Introduction to XML</td>
+                <td rowspan="2">8:00am</td>
+                <td rowspan="2">5:00pm</td>
+                <td>topic</td>
             </tr>
-            <!--ROW5-->
-            <tr>
-                
-                <td>Valadity DTD and Relax NG</td>
-            </tr>  
-             <!--ROW6-->
-            <tr>
-                <td rowspan="2">Tuesday</td>
-                <td rowpan="">8:00 am</td>
-                <td rowspan="">11:00 am</td>
-                <td>XPath</td>
-            </tr>      
-             <!--ROW7-->
-            <tr>
-                <td>11:00 am</td>
-                <td>12:00 am</td>
-        
+             <tr>
+                <td>Introduction TO XML</td>
             </tr>
+             <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00am</td>
+                <td>11:00am</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+             <tr>
+                <td>11:00am</td>
+                <td>2:00pm</td>
+            </tr>
+             <tr>
+                <td>2:00pm</td>
+                <td>5:00pm</td>
+                <td>XSL Transformations</td>
+            </tr>
+             <tr>
+                <td>Wednesday</td>
+                <td>8:00am</td>
+                <td>12:00pm</td>
+                <td>XSL Formating Objects</td>
+            </tr>
+        </table>
     </body>
 </html>
