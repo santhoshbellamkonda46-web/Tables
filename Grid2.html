@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid2</title>
+        <style>
+            .parent{
+                height: 100vh;
+                text-align: center;
+                color: white;
+                display: grid;
+                grid-template-rows: 10% 10% 80%;
+                grid-template-columns: 33% 34% 33%;
+
+            }
+            .Header{
+                background-color: lightsalmon;
+                grid-column: 1/4;
+                grid-row: 1/2;
+
+            }
+            .search{
+                background-color: green;
+                grid-column: 1/3;
+                grid-row: 2/3;
+                
+
+            }
+            .left{
+                background-color: pink;
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+            }
+            .middle{
+                background-color:orange;
+                grid-column: 2/3;
+                grid-row: 3/4;
+
+            }
+            .right{
+                background-color:blue;
+                grid-column: 3/4;
+                grid-row: 2/4;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="Header">Header</div>
+            <div class="search">search</div>
+            <div class="left">Left Sidebar</div>
+            <div class="Middle">Middle Column</div>
+            <div class="right">Right Sidebar</div>
+        </div>
+    
+    </body>
+</html>
