@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>CSS-Grid</title>
+        <style>
+            .parent{
+                height: 100vh;
+                text-align: center;
+                color:black;
+                display: grid;
+                grid-template-rows: 10% 80% 10%;
+                grid-template-columns: 15% 70% 15%;
+                gap: 15px;
+            }
+            .Header{
+                background-color: red;
+                grid-column: 1/4;
+                grid-row: 1/2;
+
+            }
+            .left{
+                background-color: yellow;
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+            }
+            .content{
+                background-color: orange;
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+            }
+            .right{
+                background-color: yellow;
+                grid-column: 3/4;
+                grid-row: 2/3;
+
+            }
+            .footer{
+                background-color: red;
+                grid-column: 1/4;
+                grid-row: 3/4;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="Header">Header</div>
+            <div class="left">Left menu</div>
+            <div class="content">content</div>
+            <div class="right">Right menu</div>
+            <div class="footer">footer</div>
+              
+        </div>
+        
+    </body>
+</html>
