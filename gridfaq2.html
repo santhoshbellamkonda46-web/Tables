@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid-faq1</title>
+        <style>
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 100px 1fr 100px;
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas: 
+                     "Header Header"
+                     "Side Content"
+                     "Footer Footer";
+                     text-align: center;
+                     color: red;
+
+            }
+            .header{
+                grid-area: Header;
+                background-color: lightgreen;
+
+            }
+            .side{
+                grid-area: Side;
+                background-color: lightpink;
+
+            }
+            .content{
+                grid-area: Content;
+                background-color: lightgray;
+
+
+            }
+            .footer{
+                grid-area: Footer;
+                background-color: lightgreen;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="header">Header</div>
+            <div class="side">SideNav</div>
+            <div class="content">Content</div>
+            <div class="footer">Footer</div>
+        </div>
+        
+    </body>
+</html>
