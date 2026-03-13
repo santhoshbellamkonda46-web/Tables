@@ -6,7 +6,12 @@
             .parent{
                 display: flex;
                 gap: 10px;
-                justify-content: space-evenly;
+               /* justify-content: space-evenly; */
+              /* height: 100vh;
+               align-items: flex-end; */
+              /* flex-direction: column-reverse; */
+              flex-wrap: wrap-reverse;
+
 
             }
             .common{
@@ -18,14 +23,19 @@
             }
             .c1{
                 background-color: blueviolet;
+                order: 10;
+                flex: 1;
 
             }
             .c2{
                 background-color: orchid;
+                order: 9;
+                flex: 1;
 
             }
             .c3{
                 background-color: blue;
+                flex: 1;
 
             }
         </style>
