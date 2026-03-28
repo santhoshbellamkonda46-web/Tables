@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js basics</title>
+    </head>
+    <body>
+        <script>
+            document.write("Welcome to js", "<br>");
+            console.log("Debugging soon");
+            console.table([10,20,30,40,50]);
+
+            document.write(10+10, "<br>");
+            document.write(10+ +"10","<br>");
+            document.write(10- "10", "<br>");
+            document.write(10* "10", "<br>");
+            document.write(10/ "10", "<br>")
+
+            //true-1
+            //false-0
+            document.write(1+true, "<br");               //2
+            document.write(1+true+true+false, "<br>");   //3
+            document.write(1+"true", "<br>");            
+            document.write(1/false, "<br>");
+            document.write(true/true, "<br>");
+            document.write(false/true, "<br>");
+
+            //=(assignment)
+            //==(comparision)
+            //===(strict comaprision)
+            document.write(10 == "10", "<br>");
+            document.write(10 === "10", "<br>");
+            document.write(1 == "one", "<br>");
+            document.write(1 === "one", "<br>");
+
+            /*
+               what are the difference between == and ===?
+               **************************************************************************
+               ==                               ===
+               **************************************************************************
+               1)compares left operand value   compares left operand value with datatype
+                with right operand value       to right operand value with datatype
+                2) ignores datatype            consider datatype
+                **************************************************************************
+            */
+
+            document.write(10>9>8, "<br>");  //false
+            document.write(1<2<3, "<br>");   //true
+
+            document.write( 10+5/10-5, "<br>"); //5.5
+            //BODMAS
+            //B - Bracket
+            //O - Of
+            //D - Division
+            //M - Multiplication
+            //A - Addition
+            //S - Subtraction
+            document.write( (10+5)/(10-5), "<br>"); //3 
+
+            //Ternary operator
+            //condition ? Block1 : Block2
+            true ? document.write("frontend","<br>"):document.write("backend", "<br>");
+            !true ? document.write("frontend","<br>"):document.write("backend", "<br>");
+            false ? document.write("frontend","<br>"):document.write("backend", "<br>");
+            !false ? document.write("frontend","<br>"):document.write("backend", "<br>");
+            10>9>8 ? document.write("frontend","<br>"):document.write("backend", "<br>");
+            !(10>9>8) ? document.write("frontend","<br>"):document.write("backend", "<br>");
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
