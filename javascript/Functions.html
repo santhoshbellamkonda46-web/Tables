@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+            /*
+               Functions
+               *********
+                 particular business logic called as function
+                                (or)
+                 set of statments also called as function
+                 
+                 functions are used to "reuse" the business logic
+
+                 types
+                 *****
+                 1) function declaration / named functions
+                 2) function expression / anonymous functions
+                 3) arrow functions
+                 4) constructor functions
+                 5) callback functions
+                 6) generator functions 
+                 7) IIFE (Immidiate Invokable Functional Expression)
+                 8) higher order functions
+                 9) pure functions
+
+
+                function declaration / named functions
+                **************************************
+                  function with particular name (user defined name ) called as function declaration / named functions
+                   
+                syntax
+                   function declaration
+                   ********************
+                   function functionname(param1,param2,param3, ......param n){
+                         business logic
+                   }
+                   call the function
+                   ******************
+                   functionname(arg1,arg2,arg3, ......arg n);      
+                   
+                function expression / anonymous functions
+                *****************************************
+                  function without particular name called as function expression / anonymous functions
+
+                syntax
+                   function expression
+                   ********************
+                   let functionname = function(param1,param2,param3, ......param n){
+                         business logic
+                   }
+                   call the function
+                   ******************
+                   functionname(arg1,arg2,arg3, ......arg n);   
+
+
+                arrow function
+                **************
+                  we will represent arrow functions with =>
+                  arrow functions released in ES6 version
+                  arrow functions simplifies the business logic   
+                 
+                syntax
+                   function expression
+                   ********************
+                   let functionname = (param1,param2,param3, ......param n)=>{
+                         business logic
+                   }
+                   call the function
+                   ******************
+                   functionname(arg1,arg2,arg3, ......arg n);   
+
+
+
+
+            */
+        </script>
+        <!-- <script>
+            function test_func(){
+                document.write(`Welcome to function declaration`);
+            }
+            test_func();
+            
+        </script> -->
+
+        <!-- <script>
+            let test_func = function(){
+                document.write(`Welcome to function expression`);
+            }
+            test_func();
+        </script> -->
+
+        <!-- <script>
+            let test_func = ()=>{
+                document.write(`Welcome to arrow function`);
+             }
+            test_func();
+
+        </script> -->
+
+        <!-- <script>
+            let db_conn = ()=>{
+                document.write(`Reactjs comming soon`)
+            }
+            db_conn();
+
+        </script> -->
+
+        <!-- <script>
+            let db_conn = function(){
+                document.write(`Reactjs comming soon`)
+            }
+            db_conn();
+        </script> -->
+
+        <!-- <script>
+           function db_conn(){
+                document.write(`Reactjs comming soon`)
+            }
+            db_conn();
+        </script> -->
+
+        <!-- <script>
+            //function with parameter and no return type
+            let add = function(num1,num2){
+                let res = num1 + num2;
+                document.write(res);
+            }
+            add(200,100);
+
+        </script> -->
+
+         <!-- <script>
+            let add =(num1,num2)=>{
+                let res = num1 + num2;
+                document.write(res);
+            }
+            add(200,100);
+
+        </script> -->
+
+         <!-- <script>
+            function add(num1,num2){
+                let res = num1 + num2;
+                document.write(res);
+            }
+            add(200,100);
+
+        </script> -->
+
+        <!-- <script>
+            function sub(num1,num2){
+                let res = num1 - num2;
+                return res;
+            }
+            let x = sub(200,100);
+            document.write(x);
+
+        </script> -->
+
+        <!-- <script>
+            let sub = function (num1,num2){
+                let res = num1 - num2;
+                return res;
+            }
+            let x = sub(200,100);
+            document.write(x);
+
+        </script> -->
+
+        <!-- <script>
+            let sub =(num1,num2)=>{
+                let res = num1 - num2;
+                return res;
+            }
+            let x = sub(200,100);
+            document.write(x);
+
+        </script> -->
+
+        
+        
+    </body>
+</html>
