@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Pratice 1</title></head>
-    <style>
-        .container{
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width= device-width, initial-scale1.0">
+        <title>Pratice 1</title>
+
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background-color:#f0f0f0;
+        }
+        .container {
+            width: 700 px;
+            background-color: #e8f4e8; /* Light greenish tint from image */ ;
+            border: 10px solid;
+            border-image: repeating-linear-gradient(60deg, #003366, #003366 10px, transparent 10px, transparent 20px) 20;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0,0, 1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            text-transform: uppercase;
 
         }
-        .header{
+        .instruction {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 16px;
 
         }
-        .question-block{
+        .question-block {
+            margin-bottom: 20px;
             
         }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: orange;
+
+
+        }
+        .options {
+            display: flex;
+            justify-content: flex-start;
+            gap: 130px;
+            padding-left: 20px;
+
+        }
+        .option {
+            min-width: 80px;
+            color: blue;
+
+        }
+        .underline {
+            display: inline-block;
+            width: 150px;
+            border-bottom: 1px solid yellowgreen ;
+            margin: 0 5px;
+
+        }
+        button{
+            position: relative;
+            left: 140px;
+            
+        }
+        fieldset{
+                border-radius: 40px;
+                border: solid;
+                
+        }
+        legend{
+            text-align: center;
+            color: crimson;
+        }
+        input{
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+    
     </style>
+    </head>
+    
     <body>
         <div class="container">
             <div class="header">
@@ -21,7 +100,7 @@
                 <span>ENGLISH</span>
                 <span>A PRAYER TO THE TEACHER</span>
             </div>
-            <div>CHOOSE THE CORRECT THE ANSWER</div>
+            <div class="instruction">CHOOSE THE CORRECT THE ANSWER</div>
             <div class="question-block">
                 <div class="question-text">1. Is your brother <span class="underline"></span> home.</div>
                 <div class="options">
@@ -41,7 +120,7 @@
             </div>
 
             <div class="question-block">
-                <div class="question-text">3. We sleep <span>underline</span>night.</div>
+                <div class="question-text">3. We sleep <span class="underline"></span>night.</div>
                     <div class="options">
                         <div class="option">a) on</div>
                         <div class="option">b) for</div>
@@ -121,11 +200,23 @@
                 </div>
             </div>
 
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="text" name="user" placeholder="Enter Your Name" >
+                <input type="RollNo" name="Rno" placeholder="Enter Your Roll No">
+                <br></br>
+                <button>Submit</button>
+            </fieldset>
+
+            
+
+           
+
 
 
 
         </div>
-
+        
         
     </body>
 </html>
