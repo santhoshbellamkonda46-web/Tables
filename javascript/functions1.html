@@ -29,7 +29,8 @@
                 document.getElementById("res").value = z;
             }
         </script> -->
-
+        
+        Assigment-1
         <fieldset>
             <legend>Full Name</legend>
             <input type="text" id="fname" placeholder="First name">
@@ -44,13 +45,69 @@
         </fieldset>
 
         <script>
-            let full name = ()=>{
+            let Full Name = ()=>{
                 let a = document.getElementById("fname").value;
                 let b = document.getElementById("lname").value;
                 document.getElementById("res").innerHTML = 
 
             }
         </script>
+
+        Assigment-2
+        <fieldset>
+            <legend></legend>
+            <input type="text" id="fname" placeholder="Enter First Name">
+            <br><br>
+            <input type="text" id="lname" placeholder="Enter Last Name">
+            <br><br>
+            <button onclick="fullname()">Full Name</button>
+            <h1 id="res"></h1>
+        </fieldset>
+        <script>
+            let full = ()=>{
+                let x = document.getElementById("fname").value;
+                let y = document.getElementById("lname").value;
+                let z = x + y ;
+                document.getElementById("res").value = z;
+                
+
+            }
+        </script>
+
+        Assigment-3
+        <fieldset>
+            <legend>CALCULATOR</legend>
+            <input type="number" id="num1" >
+            <br><br>
+            <input type="number" id="num2" >
+            <br><br>
+            <button onclick="calculate(`add`)">Add</button>
+            <button onclick="calculate(`sub`)">Sub</button>
+            <button onclick="calculate('mul')">MUL</button>
+            <button onclick="calculate('div')">DIV</button>
+            <br>
+            <p>output : <span id="clacResult"></span></p>
+            
+        </fieldset>
+        
+
+        <script>
+            const calculate = (operation) => {
+            const a = Number(document.getElementById('numA').value);
+            const b = Number(document.getElementById('numB').value);
+            let result;
+
+            if (operation === 'add'){
+
+            } result = a + b;
+
+              else if (operation === 'sub') result = a - b;
+              else if (operation === 'mul') result = a * b;
+              else if (operation === 'div') result = b !== 0 ? (a / b) : "Error (Div/0)";
+
+            document.getElementById('calcResult').innerText = result;
+        </script>
+
 
     </body>
 </html>
