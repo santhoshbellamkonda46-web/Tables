@@ -276,7 +276,7 @@
         *****
         document.getElementById("res").value = "Hello"; -->
 
-        <script>
+        <!-- <script>
             //function declaration
             function abc(){
                 a=100;
@@ -286,9 +286,9 @@
             }
             let x = abc();
             document.write(x);
-        </script>
+        </script> -->
 
-        <br>
+        <!-- <br>
 
         <script>
             //function expression
@@ -315,7 +315,128 @@
             let o = pas();
             document.write(o);
 
+        </script> -->
+
+        <!-- adding content to block level getElementById -->
+
+        <!-- HTML
+        *****
+        <p id = 'res'>   </p>
+
+
+        js
+        ***
+
+        document.getElmentById("res"). innerHTML = "Hello" -->
+
+        <!-- Handling click event without parameters
+        ***************************************
+
+        Button1
+
+        HTML
+        ****
+        <button onclick="func_one()">
+            Button1
+        </button>
+
+        js
+        **
+        let func_one = ()=>{
+            business logic
+        } -->
+
+
+        <!-- Handling click event with parameters
+        ************************************
+
+        button2
+
+        HTML
+        ****
+        <button onclick="func_two(`admin`,`admin@123`)">
+            Button2
+
+        </button>
+
+        JS
+        ***
+        let func_two = (param1,param2)=>{
+
+        } -->
+
+        <!-- Handling  double click event without parameters
+        ************************************************
+
+        ondbclick
+
+        HTML
+        ****
+        <button ondblclick="func_one()">
+            button3
+
+        </button>
+
+        JS
+        ***
+        let func_one()=>{
+            E-commerce logic
+        } --> 
+
+
+        <!-- <fieldset>
+            <legend>LOGIN</legend>
+            <input type="text" id="uname" placeholder="Enter your name">
+            <br><br>
+            <input type="text" id="upswd" placeholder="Enter password">
+            <br><br>
+            <button onclick="Login()">Login</button>
+            <br>< br>
+            <p id="res"></p>
+        </fieldset>
+
+        <script>
+            let login()= ()=>{
+                let x = document.getElementById("uname").value;
+                let y = document.getElementById("upswd").value;
+                if (x == "santosh" && == "santosh@143"){
+                    document.getElementById("res").innerHTML = "Login sucessful";
+                }else{
+                    document.getElementById("res").innerHTML = "Login failed";
+                }
+
+            }
+        </script> -->
+
+        <fieldset>
+            <legend>CALCULATOR</legend>
+            <input type="number" id="num1" placeholder="enter first num">
+            <br><br>
+            <input type="number" id="num2" placeholder="enter second num">
+            <br><br>
+            <input type="number" id="res" placeholder="comming soon">
+            <br><br>
+            <button onclick="Add">Add</button>
+            <button onclick="Sub">Sub</button>
+            <button onclick="Mul">Mul</button>
+            <button onclick="Div">Div</button>
+        </fieldset>
+
+        
+        <script>
+            let Add = ()=>{
+                let x = parseInt(document.getElementById("num1").value);
+                ley y = parseInt(document.getElementById("num2").value);
+                let z = x + y;
+                document.getElementById("res").value;
+            }
         </script>
+
+
+
+
+
+
         
         
 
