@@ -95,6 +95,161 @@
             res ? document.write("Frontend") : document.write("Backend");
           </script> -->
 
+          <!-- <script>
+            let test_func = ()=> "Hello";
+            let res = test_func();
+            document.write(res);
+          </script> -->
+
+          <!-- <script>
+            let test_func = num1 =>num1*num1;
+            let res = test_func(10);
+            document.write(res);
+          </script> -->
+
+          <!--
+             function hoisting supports by function declaration and wont support by function expression and arrow function
+          -->
+
+          
+            
+                <!-- constructor functions
+                *********************
+                  constructor functions are used to create objects
+                  "new" is the keyword used to create the objects
+                  each member in constructor functions must starts with "this" keyword  -->
+            
+
+          <!-- <script>
+            function class_one(){
+                this.num1 = 1000;
+                this.num2 = 2000;
+            }
+            let obj = new class_one();
+            let x = obj.num1;
+            let y = obj.num2;
+            let add = x + y;
+            document.write(add);
+          </script> -->
+
+          <!-- <script>
+            function class_one(){
+                this.getNum1 = function(){
+                    return 2000;
+                }
+                this.getNum2 = function(){
+                    return 1000;
+                }
+                
+            }
+            let obj = new class_one();
+            let num1 = obj.getNum1();
+            let num2 = obj.getNum2();
+            let sub = num1 - num2;
+            document.write(sub)
+          </script> -->
+
+           <!-- <script>
+            function class_one(){
+                this.num1 = 2000;
+                this.num2 = 1000;
+
+                this.getNum1 = function(){
+                    return this.num1;
+                }
+                this.getNum2 = function(){
+                    return this.num2;
+                }
+            }
+            let obj = new class_one();
+            let num1 = obj.getNum1();
+            let num2  =obj.getNum2();
+            let add = num1 + num2;
+            document.write(add);
+          </script>  -->
+
+          <!-- <script>
+            function class_one(){
+
+            }
+            class_one.prototype.frotend = `Reactjs`;
+            class_one.prototype.Backend = `Nodejs`;
+            class_one.prototype.Database = `Mongodb`;
+
+            let obj = new class_one();
+            let x = obj.frotend();
+            let y = obj.Backend();
+            let z = obj.Database();
+            document.write(x);
+          </script> -->
+
+          <!-- <script>
+            function class_one(){
+
+            }
+            class_one.prototype.getFrontend = function(){
+                return "Reactjs";
+            }
+            class_one.prototype.getBackend = function(){
+                return "Nodejs";
+            }
+            class_one.prototype.getDatabase = function(){
+
+            }
+            let obj = new class_one();
+            let res1 = obj.getFrontend();
+            let res2 = obj.getBackend();
+            document.write(res1);
+            document.write(res2);
+
+
+          </script> -->
+
+          <!-- <script>
+            function class_one(){}
+            class_one.prototype.num1 = 300;
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype);
+            class_two.prototype.num2 = 200;
+
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype);
+            class_three.prototype.num3 =100;
+            
+            let obj = new.class_three();
+            let x = obj.num1;
+            let y = obj.num2;
+            let z = obj.num3;
+            let res = x+y+z;
+            document.write(res);
+
+          </script> -->
+
+          <script>
+            function class_one(){}
+            class_one.prototype.getFrontend(){
+                return "Reactjs";
+            }
+            function class_two(){}
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.getBackend(){
+                return "Nodejs";
+            }
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype);
+            class_three.prototype.getDatabase(){
+                return "Mongodb";
+            }
+            let obj = new class_three();
+            let x = obj.getFrontend;
+            document.write(x);
+
+
+          </script>
+
+          
+
         
     </body>
 </html>
