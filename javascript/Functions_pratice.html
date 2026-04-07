@@ -226,27 +226,34 @@
 
           </script> -->
 
-          <script>
+          
+
+        <script>
             function class_one(){}
-            class_one.prototype.getFrontend(){
-                return "Reactjs";
+            class_one.prototype.getFrontend=function(){
+                return "ReactJs"
             }
             function class_two(){}
-            class_two.prototype=Object.create(class_one.prototype);
-            class_two.prototype.getBackend(){
-                return "Nodejs";
+            class_two.prototype = Object.create(class_one.prototype);
+            class_two.prototype.getBackend=function(){
+                return "NodeJs"
             }
             function class_three(){}
             class_three.prototype = Object.create(class_two.prototype);
-            class_three.prototype.getDatabase(){
-                return "Mongodb";
+            class_three.prototype.getDatabase=function(){
+                return "MongoDB"
             }
             let obj = new class_three();
-            let x = obj.getFrontend;
-            document.write(x);
+            let res1=obj.getFrontend();
+            let res2=obj.getBackend();
+            let res3=obj.getDatabase();
+            document.write(res1,`<br>`);
+            document.write(res2, `<br>`);
+            document.write(res3, `<br>`);
 
+        </script>
 
-          </script>
+        
 
           
 
