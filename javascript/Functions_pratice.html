@@ -228,7 +228,7 @@
 
           
 
-        <script>
+        <!-- <script>
             function class_one(){}
             class_one.prototype.getFrontend=function(){
                 return "ReactJs"
@@ -251,9 +251,134 @@
             document.write(res2, `<br>`);
             document.write(res3, `<br>`);
 
-        </script>
+        </script> -->
+
 
         
+              <!-- callback functions
+              ****************** 
+              Passing one function definition to another function parameter called as call back functions
+              to create APIS
+                        get
+                        post
+                        put
+                        delete
+                        trace
+                        options
+              
+              -->
+
+
+              <!-- <script>
+                let xyz = (abcde)=>{
+                    abcde();
+
+                }
+                xyz( ()=>{
+                    document.write(`Welcome to JavaScript class`);
+                    
+                }  )
+              </script> -->
+
+              <!-- <script>
+                let Subtraction = (def,result)=>{
+                    result(def-10,false);
+
+                }
+                let Addition = (def,result)=>{
+                    result(def+35,false);
+                }
+                let Multiplication = (def,result)=>{
+                    result(def*2,false);
+
+                }
+                let Division = ()=>{
+
+                }
+                Subtraction(10,(subres,flag)=>{
+                    if(!false){
+                        Addition(subres,(addres,flag)=>{
+                            if(!false){
+                                Multiplication(addres,(mulres,flag)=>{
+                                    if(!false){
+                                        
+                                    }
+                                    
+
+                                });
+                            }
+
+                        });
+                    }
+
+                });
+              </script> -->
+
+              <!-- Promises -->
+
+              <!-- <script>
+                let promise1 = new Promise((resolve,reject)=>{
+                    resolve(`Data from server soon`);
+
+                })
+                promise1.then( (posres)=>{
+                    document.write(posres,`<br>`);
+
+                },(errres)=>{
+                    document.write(errres);
+
+                })
+
+                let detail = async () => {
+                    let res = await promise1;
+                    document.write(res);
+                    
+                }
+                detail();
+              </script> -->
+
+
+              <script>
+                let addition = (num)=>{
+                    return new Promise((resolve,reject)=>{
+                        resolve(num + 5);
+
+                    })
+
+                }
+                let subtarction = (num)=>{
+                    return new Promise((resolve,reject)=>{
+                        resolve(num - 3);
+
+                    })
+
+                }
+                let multiplication = (num)=>{
+                    return new Promise((resolve,reject)=>{
+                        resolve(num * 2);
+
+                    })
+
+                }
+                let division = (num)=>{
+                    return new Promise((resolve,reject)=>{
+                        resolve(num / 4);
+
+                    })
+
+                }
+                let detail = async ()=>{
+                    let addres = await addition(5);
+                    let subres = await subtarction(addres);
+                    let mulres = await multiplication(subres);
+                    let divres = await division(mulres);
+                    document.write(divres);
+                }
+                detail();
+              </script>
+        
+
+
 
           
 
