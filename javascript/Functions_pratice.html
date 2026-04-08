@@ -2,8 +2,44 @@
 <html>
     <head>
         <title>Functions</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
+        <script>
+            $.ajax({
+                url : "https://www.w3schools.com/appml/customers.php",
+                method : "GET",
+                success : (posRes)=>{
+                    let obj = JSON.parse(posres);
+                    let {records} = obj;
+                    document.write(`<table border="1"  aligin="center"  cellpadding="10"  cellspacing="10">
+                                        <tr>
+                                            <th>Customer</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                        </tr>`);
+                    records.forEach((element,index)=>{
+                        document.write(`<tr>
+                                 <td>${element.CustomerName}</td>
+                                 <td>${element.Custome}</td>
+                                 <td></td>
+                            </tr>`)
+                    });
+
+                },
+                error : (errres)=>{
+                    console.log(errres);
+                }
+            });
+        </script>
+
+
+
+
+
+
+
+
         <!-- <fieldset>
             <legend>Login</legend>
             <input type="text" id="uname" placeholder="Enter Your Name">
@@ -338,7 +374,7 @@
               </script> -->
 
 
-              <script>
+              <!-- <script>
                 let addition = (num)=>{
                     return new Promise((resolve,reject)=>{
                         resolve(num + 5);
@@ -374,8 +410,73 @@
                     let divres = await division(mulres);
                     document.write(divres);
                 }
-                detail();
-              </script>
+                detail(); 
+              </script> -->
+
+
+              
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                resolve("hello")
+            })
+            let p2 = new Promise((resolve,reject)=>{
+                reject("Welcome")
+            })
+            let p3 = new Promise((resolve,reject)=>{
+                resolve("Js!!!!")
+            })
+            Promise.all([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+
+            Promise.allSettled([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+        </script> -->
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                resolve("hello")
+            })
+            let p2 = new Promise((resolve,reject)=>{
+                reject("Welcome")
+            })
+            let p3 = new Promise((resolve,reject)=>{
+                resolve("Js!!!!")
+            })
+            Promise.race([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+        </script> -->
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("My SQL Soon...!!!")
+                },4000);
+            });
+            let p2 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("MongoDB Soon...!!!")
+                },10000 );
+            });
+            p1.then((posres)=>{
+                console.log(posres);
+            },(errRes)=>{
+                console.log(errRes);
+            });
+            p2.then((posres)=>{
+                console.log(posres);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
         
 
 
