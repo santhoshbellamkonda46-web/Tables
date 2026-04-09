@@ -5,33 +5,148 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
-        <script>
+
+        <!-- <script>
+            /*
+
+              IIFE
+              ****
+                   Immidiate Invokable Functional Expression
+                   When ever we define the it will invoke/execute automtically called as "IIFE"
+                   "IIFE, used to overcome global polluting issue"
+                   Syntax.
+
+                   old syntax
+                       (function(param1,param2,param3,.....param n){
+                            business logic
+                       
+                       })(arr1,arr2,arr3,......arr n)
+                latest syntax
+                       ((param1,param2,param3,.....param n))=>{
+                           business logic
+                       })(arr1,arr2,arr3,......arr n)
+            */
+        </script> -->
+
+        <!-- <script>
+            (()=>{
+                document.write(`Welcome to IIFE`);
+            })()
+        </script> -->
+
+        <!-- <script>
+            let res = (()=>{
+                return 100;
+            })()
+            document.write(res);
+        </script> -->
+
+        <!-- <script>
+            let res = ((num1)=> num1 * num1)(100)
+            document.write(res);
+        </script> -->
+
+        <!-- <script>
+            /*
+
+               Generator functions
+               *******************
+                   Generator functions are used to
+                   1) pause the execution
+                   2) resume the execution
+                   3) read data value by value
+                   usecase:
+                   1) async flow
+                   2) lazy loading
+
+                   Generator functions starts with " * "
+                   "yeild" is the keyword used to pass the execution
+                   next() is the function used to resume the execution
+            
+            */
+        </script> -->
+
+        <!-- <script>
+            function *test_func(){
+                yield 100;
+                yield 200;
+                yield 300;
+            }
+            let cursor = test_func();
+            console.log(cursor.next() );
+            console.log(cursor.next() );
+            console.log(cursor.next() );
+            console.log(cursor.next() );
+        </script> -->
+
+        <!-- <script>
+            function *test_func(){
+                yield 1000;
+                yield func_one();
+                yield 3000;
+            }
+            function *func_one(){
+                yield 2000;
+            }
+            let cursor = test_func();
+            for(i=0; i<3; i++){
+                console.log(cursor.next());
+            }
+        </script> -->
+
+        <!-- <script>
+            function *test_func(){
+                yield 10000;
+                yield 20000;
+                return 30000;
+                yield 40000;
+            }
+            let cursor = test_func();
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+        </script> -->
+
+       
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script>
             $.ajax({
                 url : "https://www.w3schools.com/appml/customers.php",
                 method : "GET",
                 success : (posRes)=>{
-                    let obj = JSON.parse(posres);
-                    let {records} = obj;
-                    document.write(`<table border="1"  aligin="center"  cellpadding="10"  cellspacing="10">
+                   let obj = JSON.parse(posRes);
+                   let {records} = obj;
+                   document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">
                                         <tr>
-                                            <th>Customer</th>
+                                            <th>CustomerName</th>
                                             <th>City</th>
                                             <th>Country</th>
                                         </tr>`);
                     records.forEach((element,index)=>{
                         document.write(`<tr>
-                                 <td>${element.CustomerName}</td>
-                                 <td>${element.Custome}</td>
-                                 <td></td>
-                            </tr>`)
+                                <td>${element.CustomerName}</td>
+                                <td>${element.City}</td>
+                                <td>${element.Country}</td>
+                            </tr>`);
                     });
-
+                    document.write(`</table>`);
                 },
-                error : (errres)=>{
-                    console.log(errres);
+                error : (errRes)=>{
+                    console.log(errRes);
                 }
             });
-        </script>
+        </script> -->
 
 
 
@@ -477,6 +592,8 @@
                 console.log(errRes);
             })
         </script> -->
+        
+
         
 
 
