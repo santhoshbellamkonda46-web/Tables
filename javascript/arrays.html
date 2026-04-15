@@ -11,32 +11,53 @@
                    collection of indexed elements called as Array
                    index starts with " 0 "
                    we will represent array with the help of "[]"
-                   we will access array elements with the help of "indexes"
+                   we will access array elements with the help of "indexes" 
                
             
             */
         </script> -->
 
         <!-- <script>
-            let arr1 = [10,20,30,40,50,60];
-            let e1 = arr1(0);
-            let e2 = arr1(1);
-            let e3 = arr1(2);
-            let e4 = arr1(3);
-            let e5 = arr1(4);
-            let e6 = arr1(5);
-            document.write(e1);
+            let arr1 = [10,20,30,40,50];
+            let e1 = arr1[0];
+            let e2 = arr1[1];
+            let e3 = arr1[2];
+            let e4 = arr1[3];
+            let e5 = arr1[4];
+            document.write(e1,e2,e3,e4,e5);
+        </script> -->
+
+        <!-- <script>
+            //pratice
+            let num = [10,20,30,40,50];
+            let e1 = num[0];
+            let e2 = num[1];
+            let e3 = num[2];
+            let e4 = num[3];
+            let e5 = num[4];
+            document.write(e1,e2,e3,e4,e5);
         </script> -->
         
 
         <!-- <script>
             let arr1 = [10,20,30,40,50];
+            //at() - used to access elements with the help of positive and negative indexes
             let e1 = arr1.at(0);
             let e11 = arr1.at(-5);
             let e2 = arr1.at(1);
             let e22 = arr1.at(-4)
             document.write(e1, e11, e2, e22);
             
+        </script> -->
+
+        <!-- <script>
+            //pratice
+            let num1 = [10,20,30,40,50];
+            let n1 = num1.at(0);
+            let n11 = num1.at(-5);
+            let n2 = num1.at(1);
+            let n22 = num1.at(-4);
+            document.write(n1, n11, n2, n22);
         </script> -->
 
         <!-- <script>
@@ -179,6 +200,120 @@
             arr1.shift(); //shift() used to remove element at begining of the array
             console.log(arr1);
         </script> -->
+
+        <!-- <script>
+            /*
+                splice()
+            
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           arr1.splice(4,3);
+           console.log(arr1);    //[10, 20, 30, 40, 80, 90, 100]
+
+           arr1.splice(4,2);
+           console.log(arr1);   ////[10, 20, 30, 40, 100]
+
+           arr1.splice(0,1);
+           console.log(arr1);   //[20, 30, 40, 100]
+
+
+        </script> --> 
+
+        <!-- <script>
+            /*
+               slice()
+                 used to choose element from array
+                 immutable
+            
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           console.log(arr1.slice(4,7));
+           console.log(arr1.slice(0,1));
+           console.log(arr1.slice(9));
+           console.log(arr1.slice(5).concat(arr1.slice(0,5)));
+        </script> -->
+
+        <!-- <script>
+            /*
+              findIndex()
+            
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           let i1 = arr1.findIndex((element,index)=>{
+            return element == 60;
+           })
+           console.log(i1);
+
+           let i2 = arr1.findIndex((element,index)=>{
+            return element == 100;
+           })
+           console.log(i2);
+
+           let i3 = arr1.findIndex((element,index)=>{
+            return element == 1000;
+           })
+           console.log(i3);
+
+           arr1.splice(()=>{})
+
+        </script> -->
+
+        <!-- <script>
+            /*
+               includes()
+                  used to perform search operation
+                  boolean function
+            
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           console.log(arr1.includes(60));
+           console.log(arr1.includes(500));
+        </script> -->
+
+        <!-- <script>
+            /*
+               find()
+                    used to perform search operation
+                    this is number function
+                    if element found it will return number otherwise undefined
+            
+            */
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            console.log(
+                arr1.find((element,index)=>{
+                    return element == 60;
+                })
+            );
+
+            console.log(
+                arr1.find((element,index)=>{
+                    return element == 500;
+                })
+            );
+        </script> -->
+
+        <!-- <script>
+            /*
+               trim() -- used to remove white spaces from begining and ending of a string
+               trimStart() -- used to remove white space from begining of a string
+               trimEnd() -- used to remove white space at the end of a string
+            */
+           let str = " hello ";
+           console.log(str.trim().length);
+           console.log(str.trimStart().length);
+           console.log(str.trimEnd().length);
+        </script> -->
+
+        <script>
+            /*
+              padStart()
+              padEnd()
+            
+            */
+           let str = "hello";
+           console.log( str.padStart(10,"&").padEnd(15,"&") );
+        </script>
+
 
 
     </body>
