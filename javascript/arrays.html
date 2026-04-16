@@ -204,6 +204,8 @@
         <!-- <script>
             /*
                 splice()
+                       used to add/remove elements from any index
+                       Mutable
             
             */
            let arr1 = [10,20,30,40,50,60,70,80,90,100];
@@ -216,8 +218,14 @@
            arr1.splice(0,1);
            console.log(arr1);   //[20, 30, 40, 100]
 
+           arr1.splice(0,1,10,20);
+            console.log(arr1);      //[10, 20, 30, 40, 100]
 
+           arr1.splice(4,0,50,60,70,80,90);
+           console.log(arr1);      //[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
         </script> --> 
+
+       
 
         <!-- <script>
             /*
@@ -304,15 +312,129 @@
            console.log(str.trimEnd().length);
         </script> -->
 
-        <script>
+        <!-- <script>
+            let abc = "     Bye     "
+            console.log(abc.trim().length);
+            console.log(abc.trimStart().length);
+            console.log(abc.trimEnd().length);
+        </script> -->
+
+        
+
+        <!-- <script>
             /*
               padStart()
               padEnd()
             
             */
            let str = "hello";
-           console.log( str.padStart(10,"&").padEnd(15,"&") );
+           document.write( str.padStart(10,"&").padEnd(15,"&") );
+        </script> -->
+
+        <!-- <script>
+            //pratice
+            let abc = "to";
+            document.write(abc.padStart(9,"Welcome").padEnd(11,"JS"));
+        </script> -->
+
+
+        <!-- <script>
+            /*
+              length
+              ******
+                 used to find "" fron array
+                 used to find the number of characters grom string
+
+            */
+           let arr1 = [10,20,30,40,50];
+           let n = arr1.length;
+           arr1.length=3;
+           document.write(arr1[0]);
+           document.write(arr1[4]);
+           
+        </script> -->
+
+        <!-- <script>
+            /*
+              delete
+              ******
+                  used to delete array element 
+                  memory not relesead after deleting the element
+            */
+           let arr = [1,2,3,4,5];
+           delete arr[3];
+           console.log(arr.length);
+           console.log(arr);
+
+        </script> -->
+
+        <!-- <script>
+            /*
+              sort()
+                  used to implement ascending order or decending order
+            */
+           let arr = [10,20,30,40,50];
+           let newarr = arr.sort((num1,num2)=>{
+            return num1 - num2;
+           })
+           console.log(newarr);
+           console.log("First min element :",newarr[0]);
+           console.log("second min element :",newarr[1]);
+           console.log("First max element :", newarr[newarr.length-1]);
+           console.log("second max element :", newarr[newarr.length-2]);
+
+           //decending order
+           let newarr1 = arr.sort((num1,num2)=>{
+            return num2 - num1;
+           })
+           console.log(newarr);
+           console.log("First min element :",newarr1[0]);
+           console.log("second min element :",newarr1[1]);
+           console.log("First max element :", newarr1[newarr.length-1]);
+           console.log("second max element :", newarr1[newarr.length-2]);
+
+        </script> -->
+        
+        <!-- <script>
+            /*
+               reverse()
+                  used to reverse array elements
+            */
+           let arr = [1,2,3,4,5];
+           console.log( arr.reverse() );
+        </script> -->
+
+        <!-- <script>
+            /*
+                Array.from() -- used to convert string to char array
+                replace() -- used to replace one character with another character
+                replace() -- will replace only first occurance
+                replaceAll() -- will replace all occurances
+            */
+            console.log(
+                Array.from("Hello").reverse().toString().replace(",","")
+            );
+
+           console.log(
+            Array.from("Bye").reverse().toString().replace(/,/g, "")
+           );
+
+           
+
+           console.log(
+            "noejs".split().reverse().join()
+           );
+        </script> -->
+
+        <script>
+            /**/
+            let arr1 = ["HTML","CSS","JAVASCRIPT","REACT","NODEJS"];
+            let new_arr = arr1.map((element,index)=>{
+                return element.split().reverse().join()
+            })
+            console.log(new_arr);
         </script>
+
 
 
 
