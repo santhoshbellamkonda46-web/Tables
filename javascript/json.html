@@ -111,33 +111,31 @@
         </script> -->
 
         <script>
-            let emps = [{empId "e101",empName "emp1",empDept "CSE",empPhoto "https://regers.in/img/faces/1-image.jpg"},
-                        {empId "e102",empName "emp2",empDept "CIVIL",empPhoto "https://regers.in/img/faces/2-image.jpg"},
-                        {empId "e103",empName "emp3",empDept "MECH",empPhoto "https://regers.in/img/faces/3-image.jpg"},
-                        {mpId "e104",empName "emp4",empDept "ECE",empPhoto "https://regers.in/img/faces/4-image.jpg"},
-                        {eempId "e105",empName "emp5",empDept "EEE",empPhoto "https://regers.in/img/faces/5-image.jpg"}]
-                document.write(`
-                  <table border="1" align="center" cellpadding="10" cellspacing="10">
+            let emps = [{empId:"e101",empName:"Emp1",empDept:"CSE",empImg:"https://reqres.in/img/faces/1-image.jpg"},
+                        {empId:"e102",empName:"Emp2",empDept:"ECE",empImg:"https://reqres.in/img/faces/2-image.jpg"},
+                        {empId:"e103",empName:"Emp3",empDept:"EEE",empImg:"https://reqres.in/img/faces/3-image.jpg"},
+                        {empId:"e104",empName:"Emp4",empDept:"IT",empImg:"https://reqres.in/img/faces/4-image.jpg"},
+                        {empId:"e105",empName:"Emp5",empDept:"CIVIL",empImg:"https://reqres.in/img/faces/5-image.jpg"}];
+            document.write(`
+                <table border="1" align="center" cellpadding="10" cellspacing="10">
                     <tr>
-                        <thempId></th>
+                        <th>empId</th>
                         <th>empName</th>
                         <th>empDept</th>
-                        <th>empphoto</th>
+                        <th>empImg</th>
                     </tr>
-
-                `)
-                emps.forEach((element,index)=>{
-                    document.write(`<tr>
-                        <td>${element.empId}</td>
-                        <td>${element.empName}</td>
-                        <td>${element.empDept}</td>
-                        <td>
-                            <img src=${element.empPhoto} width = "50">
-                        </td>
-                        </tr`);
-                });
-                document.write(`</table>`);
-                
+            `);
+            emps.forEach((element,index)=>{
+                document.write(`<tr>
+                    <td>${element.empId}</td>
+                    <td>${element.empName}</td>
+                    <td>${element.empDept}</td>
+                    <td>
+                        <img src=${element.empImg} width="80">   
+                    </td>
+                </tr>`);
+            });
+            document.write(`</table>`);
         </script>
     </body>
 </html>
