@@ -342,7 +342,7 @@
             /*
               length
               ******
-                 used to find "" fron array
+                 used to find "" from array
                  used to find the number of characters grom string
 
             */
@@ -426,14 +426,173 @@
            );
         </script> -->
 
-        <script>
+        <!-- <script>
             /**/
             let arr1 = ["HTML","CSS","JAVASCRIPT","REACT","NODEJS"];
             let new_arr = arr1.map((element,index)=>{
                 return element.split().reverse().join()
             })
             console.log(new_arr);
-        </script>
+        </script> -->
+
+        <!-- <script>
+            /*
+            substr()
+               used to extract the substring
+            */
+           let str = "Welcome to javascript"
+           console.log(str.substr(0,7));
+           console.log(str.substr(8,2));
+           console.log(str.substr(11));
+        </script> -->
+
+        <!-- <script>
+            /*
+                subsrting()
+                    substring(starting index, ending index)
+            */
+            let str = "Welcome to javascript"
+            console.log(str.substring(0,7), str.substring(8,10), str.substring(11));
+            
+
+        </script> -->
+
+        <!-- <script>
+            /*
+               flat()
+                   used to convert multi-dimensional array to single-dimensional array
+            */
+           let arr = [[[[[[[[1]]]]]]],2,[[[[[[[[[[[[3]]]]]]]]]]]]];
+           console.log(arr.flat(Infinity));
+        </script> -->
+
+        <!-- <script>
+            /*
+              flatmap() -- combination of map() function & flat() function
+            */
+           let arr1 = [1,2,3];
+           let arr2 = ["one","two","three"];
+           let arr3 = ["ఒకటి","రెండు","మూడు"];
+           let new_arr = arr1.flatMap((element,index)=>{
+            return [element,arr2(index),arr3(index)]
+           });
+           console.log(new_arr);
+        </script> -->
+
+        <!-- <script>
+            /*
+               copyWithin()
+            
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           arr1.copyWithin(2,4);
+           console.log(arr1);
+
+           let arr2 = [1,2,3,4,5,6,7,8,9,10];
+           arr2.copyWithin(3,7);
+           console.log(arr2);
+        </script> -->
+
+        <!-- <script>
+            /*
+              fill()
+            */
+           let arr = [1,1,1,1,1];
+           console.log(arr.fill(2,1).fill(3,2,4).fill(4,3,4).fill(5,4));
+        </script> -->
+
+        <!-- <script>
+            /*
+              repeat()
+            
+            */
+            let abc = "Welcome";
+            console.log(abc.repeat(10));
+        </script> -->
+
+        <!-- <script>
+            /*
+               Loops
+                   1) while()
+
+               syntax
+                    initilization
+                    while(condition){
+                         business logic
+                         increment/decrement
+                    }
+            */
+           let arr = [1,2,3,4,5,6,7,8,9];
+           let i = 0;
+           while(arr.length>i){
+            document.write(arr[i],"<br>");
+            i++
+           }
+        </script> -->
+
+        <!-- <script>
+            /*
+               do while() loop
+                   without checking condition we will execute business logic atleast once called
+                   as do while() loop
+                
+                syntax
+                    initilization
+                      do{
+                          business logic
+                          increment/decrement
+                      }while(condition);
+            */
+           let arr = [1,2,3,4,5];
+           let i = 0;
+           do{
+            document.write(arr[i],"<br>");
+           }while(i<arr.length);
+        </script> -->
+
+        <!-- <script>
+            /*
+            */
+           let arr = [1,2,3,4,5];
+           for(let i=0;i<arr.length;i++){
+            document.write(arr[i],"<br>");
+           }
+        </script> -->
+        
+        <!-- <script>
+            /*
+              forEach() loop
+            */
+           let arr = [1,2,3,4,5];
+           arr.forEach((element,index)=>{
+            document.write(element,"<br>");
+           });
+        </script> -->
+
+        <!-- <script>
+            /*
+               for....of() loop
+                simplifed of for() loop
+            */
+           let arr =[1,2,3,4,5];
+           for(let element of arr){
+            document.write(element,"<br>");
+           }
+
+        </script> -->
+
+        <!-- <script>
+            /*
+              for...in() loop
+            */
+           let obj = {
+               key1 : 1000
+               key2 : 2000
+           };
+           for(let key in obj){
+            document.write(obj[key])
+           }
+        </script> -->
 
 
 
