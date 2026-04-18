@@ -110,7 +110,7 @@
             console.log(obj);
         </script> -->
 
-        <script>
+        <!-- <script>
             let emps = [{empId:"e101",empName:"Emp1",empDept:"CSE",empImg:"https://reqres.in/img/faces/1-image.jpg"},
                         {empId:"e102",empName:"Emp2",empDept:"ECE",empImg:"https://reqres.in/img/faces/2-image.jpg"},
                         {empId:"e103",empName:"Emp3",empDept:"EEE",empImg:"https://reqres.in/img/faces/3-image.jpg"},
@@ -136,6 +136,56 @@
                 </tr>`);
             });
             document.write(`</table>`);
-        </script>
+        </script> -->
+
+         <!-- <script>
+            let obj1 = {
+                key1 : 100
+            };
+            //freeze
+            //read(allows), write,update and delete(not allowed)
+            Object.freeze(obj1);
+
+            //read
+            console.log(obj1);
+
+            //write
+            obj1.key1 = 1000;
+            console.log(obj1);
+
+            //update
+            obj1.key2 = 200;
+            console.log(obj1);
+
+            //delete
+            delete obj1.key1;
+            console.log(obj1);
+
+            
+         </script> -->
+
+         <!-- <script>
+            
+            let obj1 = {
+                key1 : 100
+            }
+            //seal
+            Object.seal(obj1);
+
+            //read
+            console.log(obj1);
+
+            //update
+            obj1.key1 = 1000;
+            console.log(obj1);
+
+            //write
+            obj1.key2 = 200;
+            console.log(obj1);
+
+            //delete
+            delete obj1.key1;
+            console.log(obj1);
+         </script> -->
     </body>
 </html>
