@@ -165,6 +165,9 @@
          </script> -->
 
          <!-- <script>
+               /*
+                seal() - allows read and update
+               */
             
             let obj1 = {
                 key1 : 100
@@ -283,29 +286,30 @@
             let obj1 = {
                 name : "EComm-Appln",
                 category : "Laptops",
-                laptops : [{cost:1000,Limg:"htpps://mern-bkt.s3.eu-north-1.amazonaws.com/laptop1.jpeg"},
-                           {{cost21000,Limg:"htpps://mern-bkt.s3.eu-north-1.amazonaws.com/laptop2.jpeg"}},
-                           {{cost:3000,Limg:"htpps://mern-bkt.s3.eu-north-1.amazonaws.com/laptop3.jpeg"}},
-                           {{cost:4000,Limg:"htpps://mern-bkt.s3.eu-north-1.amazonaws.com/laptop4.jpeg"}},
-                           {{cost:5000,Limg:"htpps://mern-bkt.s3.eu-north-1.amazonaws.com/laptop5.jpeg"}}]
-            }
+                laptops : [{cost:10000,limg:"https://mern-bkt.s3.eu-north-1.amazonaws.com/laptop1.jpeg"},
+                           {cost:20000,limg:"https://mern-bkt.s3.eu-north-1.amazonaws.com/laptop2.jpeg"},
+                           {cost:30000,limg:"https://mern-bkt.s3.eu-north-1.amazonaws.com/laptop3.jpeg"},
+                           {cost:40000,limg:"https://mern-bkt.s3.eu-north-1.amazonaws.com/laptop4.jpeg"},
+                           {cost:50000,limg:"https://mern-bkt.s3.eu-north-1.amazonaws.com/laptop5.jpeg"}]
+            };
             let {name,category,laptops} = obj1;
-            document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">`
-                               <tr>
-                                <td>${name}</td>
-                               </tr>
-                               <tr>
-                                <td>${category}</td>
-                               </tr>);
+            document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">
+                                <tr>
+                                    <td colspan="2">${name}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">${category}</td>
+                                </tr>`);
             laptops.forEach((element,index)=>{
                 document.write(`<tr>
-                        <td></td>
-                                 
-                                </tr>`);
-
-            })
-
-         </script> -->
+                        <td>${element.cost}</td>
+                        <td>
+                            <img src=${element.limg} width="50">    
+                        </td>
+                    </tr>`);
+            });
+            document.write(`</table>`);
+        </script> -->
 
          <!-- <script>
             let obj1 = {
@@ -412,7 +416,7 @@
 
          </script> -->
 
-         <script>
+         <!-- <script>
             let obj = {
                 key1 : 100
 
@@ -425,6 +429,6 @@
             console.log(xerox);
 
 
-         </script>
+         </script> -->  
     </body>
 </html>

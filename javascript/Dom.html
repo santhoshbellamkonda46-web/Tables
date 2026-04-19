@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        
+        <!-- <script>
+        
+            let p = document.getElementById("my_para")
+
+        </script> -->
+
+        <!-- <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+
+        <script>
+            let all_h1 = document.getElementsByTagName("h1");
+            all_h[0]innerHTML = "Hello1";
+            all_h1[1].innerHTML = "Hello2";
+            all_h1[2].innerHTML = "Hello3";
+            all_h1[3].innerHTML = "Hello4";
+            all_h1[4].innerHTML = "Hello5";
+            all_h1[5].innerHTML = "Hello6";
+
+            for(let h1 of all_h1){
+            h1.innerHTML = "Hello"
+                
+            }
+            
+        </script> -->
+
+        <!-- <p class="p1"></p>
+        <p class="p1"></p>
+        <p class="p1"></p>
+
+        <p class="p2"></p>
+        <p class="p2"></p>
+        <p class="p2"></p>
+        <script>
+            let all_p2 = document.getElementsByClassName("p2")
+            all_p2[0].innerHTML = "HTML";
+            all_p2[1].innerHTML = "CSS";
+            all_p2[2].innerHTML = "JAVASCRIPT";
+
+            for(let p2 of all_p2){
+                p2.innerHTML = "HTML";
+                
+            }
+        </script> -->
+
+        <!-- <p></p>
+        <p></p>
+        <p></p>
+
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <p class="p1"></p>
+
+        <script>
+            let first_p = document.querySelector("p");
+            first_p.innerHTML = "Hello";
+
+            let first_p1 = document.querySelector(".p1");
+            first_p1.innerHTML = "Byee"
+        </script> -->
+
+        <!-- <p></p>
+        <p></p>
+        <p></p>
+
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <script>
+            let all_p = document.querySelectorAll("p");
+            all_p[0].innerHTML = "HTML";
+            all_p[1].innerHTML = "CSS";
+            all_p[2].innerHTML = "JAVCASCRIPT";
+
+            let all_p1 = document.querySelectorAll(".p1");
+            all_p1[0].innerHTML = "HTML";
+            all_p1[1].innerHTML = "CSS";
+            all_p1[2].innerHTML = "JAVCASCRIPT";
+
+        </script> -->
+
+        <!-- <p></p>
+
+        <script>
+            let p = document.querySelector("p");
+            p.setAttribute("class","c1");
+            console.log(p.getAttribute("class"));
+            console.log(p.hasAttribute("class"));
+            p.removeAttribute("class");
+        </script> -->
+
+        <div></div>
+
+        <!-- <script>
+            let div = document.querySelector("div");
+
+            let p = document.createElement("p");
+            p.innerHTML="Hello"
+            div.appendChild(p);
+
+            xerox_p = p.cloneNode(ture);
+            div.appendChild(xerox_p);
+
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "Hello"
+            div.replaceChild(h1,p);
+
+            let h2 = document.createElement("h2");
+            h2.innerHTML = "HELLO";
+            div.insertBefore(h2,xerox_p);
+
+        </script> -->
+
+        <div></div>
+        <script>
+            let div = document.querySelector("div")
+
+            let h6 = document.createElement("h6");
+            h6.innerHTML = "Bye";
+            div.appendChild(h6);
+
+            let h5 = document.createElement("h5");
+            h5.innerHTML = "Bye";
+            div.insertBefore(h5,h6);
+
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "Bye";
+            div.replaceChild(h1,h5);
+
+            h1_copy= h1.cloneNode(ture);
+            div.appendChild(h1_copy);
+
+            h6.remove("h6");
+
+
+        </script>
+
+
+
+    </body>
+</html>
