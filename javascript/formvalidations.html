@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Validation</title>
+        <link rel="stylesheet" href="formvalidations.css">
+        <script src="formvalidations.js"></script>
+    </head>
+    <body>
+        <form name="regForm" onsubmit="return register()">
+            <table>
+                <!--row1-->
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter first name">
+                    </td>
+                    <td>
+                        <span id="fname_errors"></span>
+                    </td>
+                </tr>
+
+                <!--row2-->
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name="lname" placeholder="enter last name">
+                    </td>
+                    <td>
+                        <span id="lname_errors"></span>
+                    </td>
+                </tr>
+
+                <!--row3-->
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="Pwd" placeholder="enter your Password">
+                    </td>
+                    <td>
+                        <span id="pwd_errors"></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        
+    </body>
+
+</html>
